@@ -11,5 +11,5 @@ public:
 	~SnakePart() {};
 
 	virtual void Grow() = 0;
-	virtual void Show(HDC) = 0;
+	virtual void Show(Graphics*, int) = 0;
 };

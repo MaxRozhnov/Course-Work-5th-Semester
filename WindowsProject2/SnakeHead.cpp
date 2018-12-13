@@ -18,15 +18,35 @@ void SnakeHead::Move()
 	{
 	case 0:  //UP
 		position.y -= size;
+		if (verticalMargin) {
+			if (position.y < 0) {
+				position.y = verticalMargin - size;
+			}
+		}
 		break;
 	case 1: //RIGHT
 		position.x += size;
+		if (horizontalMargin) {
+			if (position.x > horizontalMargin - size) {
+				position.x = 0;
+			}
+		}
 		break;
 	case 2:  //DOWN
 		position.y += size;
+		if (verticalMargin) {
+			if (position.y > verticalMargin - size) {
+				position.y = 0;
+			}
+		}
 		break;
 	case 3: //LEFT
 		position.x -= size;
+		if (horizontalMargin) {
+			if (position.x < 0) {
+				position.x = horizontalMargin - size;
+			}
+		}
 		break;
 
 	default:
@@ -50,15 +70,24 @@ void SnakeHead::Grow()
 	
 }
 
-void SnakeHead::Show(HDC hdc)
+void SnakeHead::Show(Graphics* graph, int colorPalette)
 {
 	if (alive) {
 		if (tail) {
-			tail->Show(hdc);
+			tail->Show(graph, colorPalette);
 		}
-		Graphics graphics(hdc);
-		Pen      pen(Color(255, 255, 0, 0));
-		graphics.DrawRectangle(&pen, position.x, position.y, size, size);
+		Color red = Color(255, 255, 0, 0);
+		Color blue = Color(255, 0, 0, 255);
+		//Graphics graphics(hdc);
+		if (colorPalette == 1) {
+			Pen pen(red,2);
+			graph->DrawRectangle(&pen, position.x, position.y, size, size);
+		}
+		if (colorPalette == 2) {
+			Pen pen(blue,2);
+			graph->DrawRectangle(&pen, position.x, position.y, size, size);
+		}
+		
 	}
 }
 
@@ -107,6 +136,14 @@ void SnakeHead::GoLeft()
 		direction = 3;
 		nextMove = -1;
 		moveLock = true;
+	}
+}
+
+void SnakeHead::SetMargins(int hm, int vm)
+{
+	if (vm > 0 && hm >= 0) {
+		horizontalMargin = hm;
+		verticalMargin = vm;
 	}
 }
 

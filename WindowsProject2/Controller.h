@@ -12,6 +12,8 @@ public:
 	Controller() {
 		Snake = NULL;
 		IsConnected = false;
+		hMargin = 0;
+		vMargin = 0;
 	};
 	~Controller() {};
 
@@ -24,11 +26,12 @@ public:
 
 	SnakeHead *Snake;
 
-	void ShowSnake(HDC);
+	void ShowSnake(Graphics*);
 	void UpdateSnake();
 	void MoveSnake();
 	void CheckCollision(Controller);
 	void RespawnSnake() { initializeSnake(); }
+	void SetMargins(int, int);
 	
 	
 
@@ -48,6 +51,13 @@ private:
 	void processStick();
 	void processButtons();
 	void initializeSnake();
+
+	POINT p1Start{ 24,24 };
+	POINT p2Start{ 792-48, 576-48 };
+
+	int hMargin;
+	int vMargin;
+	
 
 	GUID ownGuid;
 };

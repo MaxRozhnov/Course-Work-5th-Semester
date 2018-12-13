@@ -10,7 +10,7 @@ public:
 
 	void Move(POINT);
 	void Grow() override;
-	void Show(HDC) override;
+	void Show(Graphics*, int) override;
 	bool CheckDead(POINT);
 private:
 	int size;

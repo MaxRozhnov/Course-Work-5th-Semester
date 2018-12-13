@@ -28,14 +28,23 @@ void SnakeBody::Grow()
 	}
 }
 
-void SnakeBody::Show(HDC hdc)
+void SnakeBody::Show(Graphics* graph, int colorPalette)
 {
 	if (next) {
-		next->Show(hdc);
+		next->Show(graph, colorPalette);
 	}
-	Graphics graphics(hdc);
-	Pen      pen(Color(255, 0, 0, 255));
-	graphics.DrawRectangle(&pen, position.x, position.y, size, size);
+	//Graphics graphics(hdc);
+	Color orange = Color(255, 255, 153, 0);
+	Color cyan = Color(255, 0, 255, 255);
+	//Graphics graphics(hdc);
+	if (colorPalette == 1) {
+		Pen pen(orange,2);
+		graph->DrawRectangle(&pen, position.x, position.y, size, size);
+	}
+	if (colorPalette == 2) {
+		Pen pen(cyan,2);
+		graph->DrawRectangle(&pen, position.x, position.y, size, size);
+	}
 }
 
 bool SnakeBody::CheckDead(POINT head)

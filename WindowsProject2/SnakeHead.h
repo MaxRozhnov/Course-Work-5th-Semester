@@ -8,6 +8,8 @@ public:
 													  size(nsize), 
 		direction(ndirection) 
 	{
+		verticalMargin = 0;
+		horizontalMargin = 0;
 		moveLock = false;
 		accelerated = false;
 		alive = true;
@@ -26,12 +28,14 @@ public:
 
 	void Move();
 	void Grow() override;
-	void Show(HDC) override;
+	void Show(Graphics*, int) override;
 
 	void GoUp();
 	void GoRight();
 	void GoDown();
 	void GoLeft();
+
+	void SetMargins(int, int);
 
 	void Update();
 
@@ -60,7 +64,6 @@ public:
 		Grow();
 		Move();
 		Move();
-
 	}
 
 	SnakeBody *GetTail() { return tail; }
@@ -72,6 +75,8 @@ private:
 				   //3 - LEFT
 	int nextMove;
 	int size;
+	int verticalMargin;
+	int horizontalMargin;
 	bool moveLock;
 	
 	SnakeBody *tail;

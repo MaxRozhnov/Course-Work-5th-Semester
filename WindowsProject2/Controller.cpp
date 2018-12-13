@@ -57,10 +57,10 @@ bool Controller::InitializeJoyCon()
 	return TRUE;
 }
 
-void Controller::ShowSnake(HDC hdc)
+void Controller::ShowSnake(Graphics *graph)
 {
 	if (Snake) {
-		Snake->Show(hdc);
+		Snake->Show(graph, ControllerID);
 	}
 }
 
@@ -86,6 +86,17 @@ void Controller::CheckCollision(Controller otherController) {
 			}
 		}
 	}
+}
+
+void Controller::SetMargins(int hm, int vm)
+{
+	hMargin = hm;
+	vMargin = vm;
+	p2Start = POINT{ hm - 48, vm - 48 };
+	if (Snake) {
+		Snake->SetMargins(hm, vm);
+	}
+	
 }
 
 bool Controller::ProcessControls()
@@ -230,7 +241,21 @@ HRESULT Controller::JoyStickPoll(DIJOYSTATE2 *js)
 
 void Controller::initializeSnake()
 {
-	Snake = new SnakeHead(POINT{24,24},24,2);
+	switch (ControllerID)
+	{
+	case 1:
+		Snake = new SnakeHead(p1Start, 24, 2);
+		break;
+
+	case 2:
+		Snake = new SnakeHead(p2Start, 24, 0);
+		break;
+	default:
+		break;
+	}
+
+	Snake->SetMargins(hMargin, vMargin);
+	
 }
 
 
