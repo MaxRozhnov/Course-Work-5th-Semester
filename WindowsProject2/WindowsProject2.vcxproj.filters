@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов\SnakeBitmaps">
+      <UniqueIdentifier>{674bd792-e926-4a02-a865-3f2540da6beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\SnakeHeaders">
+      <UniqueIdentifier>{d419cba7-e299-47b2-906e-a27e85d81a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\SnakeSources">
+      <UniqueIdentifier>{b32f8568-6cc2-4f1b-b89e-bb95c20512e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\OtherHeaders">
+      <UniqueIdentifier>{e94172dd-0baa-4859-b45c-7e6d803f1292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MainSources">
+      <UniqueIdentifier>{e035bf91-160c-40b6-b2a5-c020136e7107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Controller">
+      <UniqueIdentifier>{3b7e93ca-1c5a-40fb-983a-3eb5a302d466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\GuidList">
+      <UniqueIdentifier>{872198f7-0dc8-4b28-9193-1ec8ce79e2e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ControllerSources">
+      <UniqueIdentifier>{581d000b-87ff-4d52-8adc-e79c5c3f492b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SnakeBody.h">
+      <Filter>Файлы заголовков\SnakeHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeHead.h">
+      <Filter>Файлы заголовков\SnakeHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakePart.h">
+      <Filter>Файлы заголовков\SnakeHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Файлы заголовков\OtherHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Файлы заголовков\OtherHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Файлы заголовков\OtherHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsProject2.h">
+      <Filter>Файлы заголовков\OtherHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Файлы заголовков\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="GuidList.h">
+      <Filter>Файлы заголовков\GuidList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SnakeBody.cpp">
+      <Filter>Исходные файлы\SnakeSources</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeHead.cpp">
+      <Filter>Исходные файлы\SnakeSources</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakePart.cpp">
+      <Filter>Исходные файлы\SnakeSources</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Исходные файлы\MainSources</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsProject2.cpp">
+      <Filter>Исходные файлы\MainSources</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Исходные файлы\ControllerSources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WindowsProject2.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="WindowsProject2.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Все по курсачу\Sprites\Red\Red_Body.bmp">
+      <Filter>Файлы ресурсов\SnakeBitmaps</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Все по курсачу\Sprites\Red\Red_Head_Down.bmp">
+      <Filter>Файлы ресурсов\SnakeBitmaps</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Все по курсачу\Sprites\Red\Red_Head_Left.bmp">
+      <Filter>Файлы ресурсов\SnakeBitmaps</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Все по курсачу\Sprites\Red\Red_Head_Right.bmp">
+      <Filter>Файлы ресурсов\SnakeBitmaps</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Все по курсачу\Sprites\Red\Red_Head_Up.bmp">
+      <Filter>Файлы ресурсов\SnakeBitmaps</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
