@@ -1,4 +1,4 @@
 ﻿  WindowsProject2.cpp
   c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\max\source\repos\windowsproject2\windowsproject2\windowsproject2.cpp(176): warning C4715: WndProc: значение возвращается не при всех путях выполнения
+c:\users\max\source\repos\windowsproject2\windowsproject2\windowsproject2.cpp(185): warning C4715: WndProc: значение возвращается не при всех путях выполнения
   WindowsProject2.vcxproj -> C:\Users\Max\source\repos\WindowsProject2\Debug\WindowsProject2.exe
