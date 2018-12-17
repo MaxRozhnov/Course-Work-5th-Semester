@@ -19,7 +19,7 @@ void Apple::TryEat(SnakeHead *p1, SnakeHead *p2)
 			return;
 		}
 		else {
-			p1->Grow();
+			p2->Grow();
 		}
 	}
 	else {

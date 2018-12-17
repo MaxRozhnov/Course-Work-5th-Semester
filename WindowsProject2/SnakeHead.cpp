@@ -96,7 +96,7 @@ void SnakeHead::GoUp()
 	if (moveLock) {
 		nextMove = 0;
 	}
-	if (direction != 2 && !moveLock) {
+	if (direction != 2 && !moveLock && direction != 0) {
 		direction = 0;
 		nextMove = -1;
 		moveLock = true;
@@ -108,7 +108,7 @@ void SnakeHead::GoRight()
 	if (moveLock) {
 		nextMove = 1;
 	}
-	if (direction != 3 && !moveLock) {
+	if (direction != 3 && !moveLock && direction != 1) {
 		direction = 1;
 		nextMove = -1;
 		moveLock = true;
@@ -120,7 +120,7 @@ void SnakeHead::GoDown()
 	if (moveLock) {
 		nextMove = 2;
 	}
-	if (direction != 0 && !moveLock) {
+	if (direction != 0 && !moveLock && direction != 2) {
 		direction = 2;
 		nextMove = -1;
 		moveLock = true;
@@ -132,7 +132,7 @@ void SnakeHead::GoLeft()
 	if (moveLock) {
 		nextMove = 3;
 	}
-	if (direction != 1 && !moveLock) {
+	if (direction != 1 && !moveLock && direction != 3) {
 		direction = 3;
 		nextMove = -1;
 		moveLock = true;
