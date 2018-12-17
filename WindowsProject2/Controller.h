@@ -23,6 +23,7 @@ public:
 	bool ProcessControls();
 	bool IsConnected;
 	bool SnakeIsAccelerted();
+	bool SnakeIsALive() { return Snake ? Snake->alive : false; }
 
 	SnakeHead *Snake;
 
@@ -32,6 +33,7 @@ public:
 	void CheckCollision(Controller);
 	void RespawnSnake() { initializeSnake(); }
 	void SetMargins(int, int);
+	void Restart() { delete Snake; initializeSnake(); }
 	
 	
 

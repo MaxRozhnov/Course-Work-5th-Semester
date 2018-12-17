@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Apple.h" />
     <ClInclude Include="Controller.h" />
     <ClInclude Include="GuidList.h" />
     <ClInclude Include="Resource.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="WindowsProject2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Apple.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="SnakeBody.cpp" />
     <ClCompile Include="SnakeHead.cpp" />

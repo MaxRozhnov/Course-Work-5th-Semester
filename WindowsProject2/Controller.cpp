@@ -86,6 +86,9 @@ void Controller::CheckCollision(Controller otherController) {
 			}
 		}
 	}
+	if (!Snake->alive) {
+
+	}
 }
 
 void Controller::SetMargins(int hm, int vm)

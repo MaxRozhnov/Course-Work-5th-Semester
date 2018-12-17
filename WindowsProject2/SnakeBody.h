@@ -12,7 +12,9 @@ public:
 	void Grow() override;
 	void Show(Graphics*, int) override;
 	bool CheckDead(POINT);
+	
 private:
 	int size;
 	SnakeBody *next;
+
 };

@@ -37,6 +37,12 @@
     <Filter Include="Исходные файлы\ControllerSources">
       <UniqueIdentifier>{581d000b-87ff-4d52-8adc-e79c5c3f492b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\AppleHeadres">
+      <UniqueIdentifier>{e82d2dc9-513d-4c33-8b18-f9d070ab0ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AppleSources">
+      <UniqueIdentifier>{2673246e-0d4c-4338-bf68-cd55faa7a69a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SnakeBody.h">
@@ -66,6 +72,9 @@
     <ClInclude Include="GuidList.h">
       <Filter>Файлы заголовков\GuidList</Filter>
     </ClInclude>
+    <ClInclude Include="Apple.h">
+      <Filter>Файлы заголовков\AppleHeadres</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SnakeBody.cpp">
@@ -85,6 +94,9 @@
     </ClCompile>
     <ClCompile Include="Controller.cpp">
       <Filter>Исходные файлы\ControllerSources</Filter>
+    </ClCompile>
+    <ClCompile Include="Apple.cpp">
+      <Filter>Исходные файлы\AppleSources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
