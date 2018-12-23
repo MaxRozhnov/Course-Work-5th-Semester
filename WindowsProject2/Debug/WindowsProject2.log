@@ -1,4 +1,15 @@
-﻿  WindowsProject2.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (WindowsProject2.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  stdafx.cpp
+  Apple.cpp
+c:\users\max\source\repos\windowsproject2\windowsproject2\apple.h(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Controller.cpp
   c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\max\source\repos\windowsproject2\windowsproject2\windowsproject2.cpp(185): warning C4715: WndProc: значение возвращается не при всех путях выполнения
-  WindowsProject2.vcxproj -> C:\Users\Max\source\repos\WindowsProject2\Debug\WindowsProject2.exe
+  SnakeBody.cpp
+  SnakeHead.cpp
+  SnakePart.cpp
+  WindowsProject2.cpp
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\max\source\repos\windowsproject2\windowsproject2\apple.h(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+c:\users\max\source\repos\windowsproject2\windowsproject2\windowsproject2.cpp(182): warning C4715: WndProc: значение возвращается не при всех путях выполнения
+  WindowsProject2.vcxproj -> C:\Users\Max\source\repos\WindowsProject2\Debug\Snakes2.exe

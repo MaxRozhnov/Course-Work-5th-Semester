@@ -5,16 +5,21 @@
 #include <gdiplus.h>
 #include "SnakeHead.h"
 #include "SnakePart.h"
+#include <stdlib.h> 
+#include <time.h> 
+
 using namespace Gdiplus;
 
 class Apple {
 public:
 	Apple(POINT pos, int lWidth, int lHeight) {
+		srand(time(NULL));
 		frame = 0;
 		position = pos;
 		size = 24;
 		logicalHeight = lHeight;
 		logicalWidth = lWidth;
+		respawn();
 	}
 	
 	void Show(Graphics*);

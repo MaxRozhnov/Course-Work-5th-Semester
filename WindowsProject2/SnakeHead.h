@@ -2,6 +2,7 @@
 #include "SnakePart.h"
 #include "SnakeBody.h"
 
+
 class SnakeHead : public SnakePart {
 public:
 	SnakeHead(POINT pos, int nsize, int ndirection) : SnakePart(pos), 

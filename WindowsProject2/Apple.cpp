@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Apple.h"
-#include <stdlib.h> 
+
+
 
 void Apple::Show(Graphics *graph)
 {
@@ -37,6 +38,7 @@ void Apple::TryEat(SnakeHead *p1, SnakeHead *p2)
 
 void Apple::respawn()
 {
+	
 	int pX = rand() % (logicalWidth );
 	int pY = rand() % (logicalHeight );
 	POINT newPosition{ pX*size,pY*size };
